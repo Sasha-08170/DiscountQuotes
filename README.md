@@ -73,7 +73,7 @@ type Props = {
 
 ---
 
-## 🚀 Пример использования
+## 🚀 Использование компонента
 
 ```tsx
 import DiscountQuotes, { QuoteItem } from './DiscountQuotes';
