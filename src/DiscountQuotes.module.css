@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+/* === Desktop cards === */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  background: linear-gradient(180deg, #2a1f57, #1a1238);
+  border-radius: 16px;
+  padding: 24px;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.desc {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.priceBlock {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: auto;
+}
+
+.price {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #ffcc70;
+}
+
+.note {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* === Accordion (mobile) === */
+.accordion {
+  display: none;
+}
+
+.accordionItem {
+  border-radius: 14px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.accordionHeader {
+  width: 100%;
+  text-align: left;
+  padding: 16px 18px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #2a1f57, #322b6a);
+  color: #fff;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.accordionHeader:hover {
+  background: linear-gradient(90deg, #372b7e, #42358d);
+}
+
+.icon {
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+}
+
+.iconActive {
+  transform: rotate(180deg);
+}
+
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+  background: #1a1238;
+  color: #fff;
+  transition: max-height 0.4s ease, padding 0.3s ease, opacity 0.3s ease;
+  padding: 0 18px;
+  opacity: 0;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .cards {
+    display: none;
+  }
+  .accordion {
+    display: block;
+  }
+}
