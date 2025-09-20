@@ -6,7 +6,9 @@
 - 📱 **На мобильных** — в виде аккордеона с плавной анимацией.
 
 <img width="1920" height="401" alt="Screenshot_2025_09_20-4" src="https://github.com/user-attachments/assets/5e3ab957-a8d3-4446-8d48-cd668310367b" />
-<img width="721" height="397" alt="Screenshot_2025_09_20-5" src="https://github.com/user-attachments/assets/0a5b56e8-0e53-4abf-90c4-0130cc7e403f" />
+
+<img width="712" height="370" alt="Screenshot_2025_09_20-6" src="https://github.com/user-attachments/assets/241467d2-bd9c-48a7-bc82-4293f35e9ff3" />
+
 
 ---
 
